@@ -8,7 +8,8 @@ const App = () => {
   const [inputText,inputTextSetter] = useState('');
 
   function inputHandler(e) {
-    let valueText = "Hello! " + e.target.value
+    let valueText = "Hello " + e.target.value+"!";
+    console.log(valueText)
     inputTextSetter(valueText)
   }
 
